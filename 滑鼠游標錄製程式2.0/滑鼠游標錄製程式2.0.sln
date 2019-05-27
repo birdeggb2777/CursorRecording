@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "滑鼠游標錄製程式2.0", "滑鼠游標錄製程式2.0\滑鼠游標錄製程式2.0.vbproj", "{FACCFC43-3591-4320-BA86-E99D5A3BB03A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FACCFC43-3591-4320-BA86-E99D5A3BB03A}.Debug|x86.ActiveCfg = Debug|x86
+		{FACCFC43-3591-4320-BA86-E99D5A3BB03A}.Debug|x86.Build.0 = Debug|x86
+		{FACCFC43-3591-4320-BA86-E99D5A3BB03A}.Release|x86.ActiveCfg = Release|x86
+		{FACCFC43-3591-4320-BA86-E99D5A3BB03A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+C:\Users\user\Desktop\滑鼠游標錄製程式\滑鼠游標錄製程式\bin\Release\滑鼠游標錄製程式.exe
+C:\Users\user\Desktop\滑鼠游標錄製程式\滑鼠游標錄製程式\bin\Release\滑鼠游標錄製程式.pdb
+C:\Users\user\Desktop\滑鼠游標錄製程式\滑鼠游標錄製程式\bin\Release\滑鼠游標錄製程式.xml
+C:\Users\user\Desktop\滑鼠游標錄製程式\滑鼠游標錄製程式\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\user\Desktop\滑鼠游標錄製程式\滑鼠游標錄製程式\obj\x86\Release\WindowsApplication1.Form1.resources
+C:\Users\user\Desktop\滑鼠游標錄製程式\滑鼠游標錄製程式\obj\x86\Release\WindowsApplication1.Resources.resources
+C:\Users\user\Desktop\滑鼠游標錄製程式\滑鼠游標錄製程式\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\user\Desktop\滑鼠游標錄製程式\滑鼠游標錄製程式\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\user\Desktop\滑鼠游標錄製程式\滑鼠游標錄製程式\obj\x86\Release\滑鼠游標錄製程式.exe
+C:\Users\user\Desktop\滑鼠游標錄製程式\滑鼠游標錄製程式\obj\x86\Release\滑鼠游標錄製程式.xml
+C:\Users\user\Desktop\滑鼠游標錄製程式\滑鼠游標錄製程式\obj\x86\Release\滑鼠游標錄製程式.pdb
+C:\Users\user\Desktop\3to2\滑鼠游標錄製程式\滑鼠游標錄製程式\obj\x86\Release\滑鼠游標錄製程式.exe
+C:\Users\user\Desktop\3to2\滑鼠游標錄製程式\滑鼠游標錄製程式\obj\x86\Release\滑鼠游標錄製程式.xml
+C:\Users\user\Desktop\3to2\滑鼠游標錄製程式\滑鼠游標錄製程式\obj\x86\Release\滑鼠游標錄製程式.pdb
+D:\C碟備份\3to2\自製軟體\滑鼠游標錄製程式\滑鼠游標錄製程式\obj\x86\Release\滑鼠游標錄製程式.exe
+D:\C碟備份\3to2\自製軟體\滑鼠游標錄製程式\滑鼠游標錄製程式\obj\x86\Release\滑鼠游標錄製程式.xml
+D:\C碟備份\3to2\自製軟體\滑鼠游標錄製程式\滑鼠游標錄製程式\obj\x86\Release\滑鼠游標錄製程式.pdb

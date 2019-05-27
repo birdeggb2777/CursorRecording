@@ -1,0 +1,123 @@
+﻿Public Class Form1
+
+    ' 參考資料: https://social.msdn.microsoft.com/Forums/en-US/05e7236e-1b98-43fc-9769-c1ccdbfbff46/monitor-keys?forum=Vsexpressvb
+    '操考資料:http://www.programmer-club.com.tw/ShowSameTitleN/vcdotnet/3234.html
+    '參考資料:http://myvbdiary.blogspot.tw/2007/12/textbox.html
+    '參考資料: https://tw.answers.yahoo.com/question/index?qid=20141201000015KK03610
+    Dim ti As Single = 10000
+    Dim a As Integer = 0
+    Public Declare Function GetAsyncKeyState Lib "user32" (ByVal vKey As Integer) As Integer
+    Dim WithEvents Tmr As New Timer
+    Private Sub Tmr_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Handles Tmr.Tick
+        Tmr.Stop()
+        If CBool(GetAsyncKeyState(Keys.U)) Then
+            ti = 0
+        End If
+        If CBool(GetAsyncKeyState(Keys.I)) Then
+            ti = 10000
+        End If
+        If CBool(GetAsyncKeyState(Keys.O)) Then
+            ti = 1000
+        End If
+        If CBool(GetAsyncKeyState(Keys.M)) Then
+            Shell("滑鼠游標錄製程式", vbNormalFocus)
+            End
+        End If
+        Tmr.Start()
+    End Sub
+
+    'Private Sub Form1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+    '    If e.KeyCode = Keys.U = True Then
+    '        ti = 0
+    '    End If
+    '    If e.KeyCode = Keys.I = True Then
+    '        ti = 10000
+    '    End If
+    '    If e.KeyCode = Keys.O = True Then
+    '        ti = 1000
+    '    End If
+    '    If e.KeyCode = Keys.M = True Then
+    '        Shell("滑鼠游標錄製程式", vbNormalFocus)
+    '        End
+    '    End If
+    '
+    'End Sub
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+        On Error GoTo oo
+        Dim x, y As String
+        ti += 0.05
+        If ti < 300 Then
+            x = Cursor.Position.X
+            y = Cursor.Position.Y
+            Label1.Text = "X座標" + x
+            Label2.Text = "Y座標" + y
+            ' Label3.Text = "時間" + ti
+            TextBox1.Text = TextBox1.Text + x + ControlChars.CrLf
+            TextBox2.Text = TextBox2.Text + y + ControlChars.CrLf
+            Dim it As String = Str(ti)
+            TextBox3.Text = TextBox3.Text + it + ControlChars.CrLf
+            '  Dim it2 As Single
+            '  it2 = Val(TextBox3.Lines(1))
+            '  ti = it2
+            With TextBox1
+                .SelectionStart = .Text.Length '將文字全選  
+                .ScrollToCaret() '移動至末端  
+            End With
+            With TextBox2
+                .SelectionStart = .Text.Length '將文字全選  
+                .ScrollToCaret() '移動至末端  
+            End With
+            With TextBox3
+                .SelectionStart = .Text.Length '將文字全選  
+                .ScrollToCaret() '移動至末端  
+            End With
+            If ti >= 300 And ti < 301 Then
+                ti = 10000
+
+                ' Button1.Show()
+                MsgBox("錄製完畢")
+            End If
+        End If
+        If ti > 1000 And ti < 1300 Then
+            Dim it2 As Single
+            it2 = Val(TextBox3.Lines(a))
+            'ti = it2
+            'If ti = it2 + 1000 Then
+            Cursor.Position = New System.Drawing.Point(TextBox1.Lines(a), TextBox2.Lines(a))
+            a += 1
+        End If
+        'End If
+        If ti >= 1300 Then
+            a = 0
+        End If
+
+        If ti = -100 Then
+oo:         ti = 10000
+        End If
+
+    End Sub
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        ti = 1000
+    End Sub
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        ti = 0
+    End Sub
+
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'Button1.Hide()
+        '  Button2.Hide()
+        ''''''''''''
+        Tmr.Interval = 100
+        Tmr.Start()
+        ''''''''''''
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        ti = 10000
+    End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        Shell("滑鼠游標錄製程式", vbNormalFocus)
+        End
+    End Sub
+End Class
